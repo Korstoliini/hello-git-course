@@ -43,7 +43,19 @@ def merge(left, right):
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
 
+<<<<<<< HEAD
 @@ -23,3 +57,6 @@ def debug_print(debug_msg=None, **kwargs):
+=======
+    input_list = input_str.split(",")
+    debug_print(input_list=input_list)
+
+    value_list = []
+    for x in input_list:
+        try:
+            value_list.append(int(x))
+        except ValueError as err:
+            print("Invalid input.")
+>>>>>>> 764ca464eae1a62a5fabfecd7266ea928b1cffd3
             quit(1)
 
     debug_print(value_list=value_list)
